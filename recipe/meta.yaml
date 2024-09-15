@@ -1,5 +1,5 @@
 {% set name = "orthority" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/orthority-{{ version }}.tar.gz
-  sha256: 8bfc598231f3d0ff5153052f827ce31a860d584ecfe2d8a56819fb5b55fa7771
+  sha256: a6f77243fc3cecbee619784d97ec7d83f879f16773477d858aea8cd23629fed3
 
 build:
   entry_points:
