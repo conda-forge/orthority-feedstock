@@ -14,7 +14,7 @@ build:
     - oty = orthority.cli:cli
     - simple-ortho = orthority.cli:simple_ortho
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  script: {{ PYTHON }} -m pip install . -vv
   number: 0
 
 requirements:
