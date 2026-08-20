@@ -1,13 +1,13 @@
 {% set name = "orthority" %}
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/orthority-{{ version }}.tar.gz
-  sha256: 4ab1cd36169ebeac4a6fb1d74d7bf7973be8bf5412dbdc11f6bcc6b3f45098db
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/orthority-{{ version }}.tar.gz
+  sha256: 72fbea3ba31a75956ea03ae2c47413109ea8df826449eecae19b52219761825c
 
 build:
   entry_points:
@@ -15,7 +15,7 @@ build:
     - simple-ortho = orthority.cli:simple_ortho
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
