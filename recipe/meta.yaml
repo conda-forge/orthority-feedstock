@@ -30,6 +30,7 @@ requirements:
     - click >=8
     - tqdm >=4
     - fsspec >=2023.12
+    - threadpoolctl >=3.6
 
 test:
   imports:
